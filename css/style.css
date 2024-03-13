@@ -1,0 +1,632 @@
+:root {
+
+    --color-background-primary: #111111;
+    --color-background-secundary: #191919;
+    --color-background-third: #1E1E1E;
+    --color-primary: #B11722;
+    --color-secundary: #FC393F;
+    --color-third: #838383;
+    --color-font: #F2F3F4;
+
+}
+
+* {
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+    background-color: var(--color-background-primary);
+    color: var(--color-font);
+
+}
+
+header {
+
+    padding: 30px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--color-background-secundary);
+
+}
+
+header .logo {
+
+    position: relative;
+    font-size: 2rem;
+    color: var(--color-secundary);
+
+}
+
+header .navigation {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+}
+
+header .navigation li a {
+
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    color: var(--color-font);
+    letter-spacing: 1px;
+
+}
+
+header .navigation li a:after {
+
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+
+    transition: 500ms;
+
+}
+
+header .navigation li a:hover {
+
+    color: var(--color-primary);
+
+}
+
+header .navigation li a:hover:after {
+
+    width: 100%;
+
+}
+
+/*MAIN SECTION WELCOME*/
+main .welcome {
+
+    padding: 50px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+main .welcome .welcome-name {
+
+    color: var(--color-secundary);
+    font-size: 0.75rem;
+
+}
+
+main .welcome h1 {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+main .welcome .description-about-me {
+
+    font-size: 0.80rem;
+    color: var(--color-third);
+    line-height: 20px;
+
+}
+
+main .welcome a {
+
+    display: inline-block;
+    margin-top: 15px;
+
+    text-decoration: none;
+    color: var(--color-font);
+    background-image: linear-gradient(to right, var(--color-primary) , var(--color-secundary));
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    transition: opacity 500ms;
+
+}
+
+main .welcome a:hover {
+
+    opacity: 1;
+
+}
+
+/*SECTION TECNOLOGIAS*/
+
+main .technologies {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 20px;
+
+    background-image: linear-gradient(to right, var(--color-background-secundary) 50%, var(--color-background-primary) 50%);
+
+}
+
+main .technologies .technology {
+
+    width: 200px;
+    height: 300px;
+
+    margin-left: 15px;
+    margin-top: 15px;
+
+    background-color: var(--color-background-third);
+    border-radius: 5px;
+
+    padding: 20px;
+
+}
+
+main .technologies .technology.js {
+
+    background-color: var(--color-secundary);
+
+}
+
+main .technologies .technology.js a {
+
+    color: var(--color-font);
+    opacity: 0.7;
+
+}
+
+main .technologies .technology.js a:hover {
+
+    transition: opacity 500ms;
+    opacity: 1;
+
+}
+
+main .technologies .technology.js p {
+
+    color: var(--color-font);
+
+}
+
+main .technologies .technology.js i.bxl-javascript {
+
+    color: var(--color-font);
+
+}
+
+main .technologies .technology i.tec_logo {
+
+    font-size: 2.5rem;
+    color: var(--color-secundary);
+
+}
+
+main .technologies .technology h2 {
+
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    margin: 15px 0;
+
+}
+
+main .technologies .technology p {
+
+    color: var(--color-third);
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 0.8rem;
+
+}
+
+main .technologies .technology a {
+
+    text-decoration: none;
+    color: var(--color-secundary);
+    display: flex;
+    align-items: center;
+
+    opacity: 0.7;
+
+}
+
+main .technologies .technology a:hover {
+
+    transition: opacity 500ms;
+    opacity: 1;
+
+}
+
+/*PROJECTS*/
+
+main .projects {
+
+    padding: 50px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+main .projects .projects-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main .projects .projects-title {
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 25px;
+
+
+}
+
+main .projects .projects-description {
+
+    font-size: 0.8rem;
+    color: var(--color-third);
+
+    margin: 15px 0;
+
+}
+
+main .projects a.view-all {
+
+    text-decoration: none;
+    color: var(--color-font);
+    background-image: linear-gradient(to right, var(--color-primary) , var(--color-secundary));
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 15px 30px;
+    /* padding: 5px 10px; */
+
+    transition: opacity 500ms;
+
+    margin-bottom: 20px;
+
+}
+
+main .projects a.view-all:hover {
+
+    opacity: 1;
+
+}
+
+main .projects .project {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+main .projects .project .one-project {
+
+    width: 400px;
+
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+
+main .projects .project .one-project div {
+
+    background-color: var(--color-background-third);
+
+    padding: 40px 0;
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .projects .project .one-project div img {
+
+    width: 320px;
+    height: 200px;
+
+    box-shadow: 0px 4px  var(--color-primary);
+
+}
+
+main .projects .project .one-project h3 {
+
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+
+main .projects .project .one-project a {
+
+    text-decoration: none;
+    color: var(--color-secundary);
+
+    font-size: 0.8rem;
+    opacity: 0.7;
+
+    display: flex;
+    align-items: center;
+
+}
+
+main .projects .project .one-project a:hover {
+
+    transition: opacity 500ms;
+    opacity: 1;
+
+}
+
+/*CONTACT ME*/
+
+main .contact-me {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-background-third);
+    padding: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+main .contact-me h2 {
+
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+main .contact {
+
+    width: 500px;
+
+    background-color: var(--color-background-secundary);
+
+    padding: 40px 30px;
+    border-radius: 5px;
+
+}
+
+main .contact-me form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .contact-me form input {
+
+    margin-bottom: 15px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    width: 100%;
+    color: var(--color-third);
+
+}
+
+main .contact-me form button {
+
+    color: var(--color-font);
+    background-image: linear-gradient(to right, var(--color-primary) , var(--color-secundary));
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 15px 30px;
+
+    border: none;
+
+    transition: opacity 500ms;
+
+}
+
+main .contact-me form button:hover {
+
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+
+main .contact-me form .single-input input:focus ~ label {
+
+    transform: translateY(-22px);
+    font-size: 12px;
+    color: var(--color-primary);
+
+}
+
+main .contact-me form .single-input input:focus {
+
+    border-bottom: 2px solid var(--color-primary);
+
+}
+
+/*NAVBAR*/
+
+main .navbar {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+main .navbar a {
+
+    position: relative;
+    text-decoration: none;
+    color: var(--color-font);
+    margin-right: 15px;  
+    margin-bottom: 35px;  
+
+}
+
+main .navbar a:after {
+
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+
+    transition: 500ms;
+
+}
+
+main .navbar a:hover {
+
+    color: var(--color-primary);
+
+}
+
+main .navbar a:hover:after {
+
+    width: 100%;
+
+}
+
+/*FOOTER*/
+
+footer {
+
+    width: 100%;
+
+    background-color: var(--color-background-third);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 20px 0;
+
+    box-shadow: 4px -2px 0px rgb(73, 73, 73);
+
+}
+
+footer .logo {
+
+    position: relative;
+    font-size: 2rem;
+    color: var(--color-secundary);
+    margin-left: 140px;
+
+}
+
+footer div {
+
+    max-width: 900px;
+
+}
+
+footer div a {
+
+    opacity: 0.5;
+    transition: opacity 500ms;
+
+}
+
+footer div a:hover {
+
+    opacity: 1;
+
+}
+
+footer div i {
+
+    font-size: 2rem;
+    color: var(--color-secundary);
+
+    margin-right: 15px;
+
+}
+
+footer p {
+
+    font-family: "Poppins", sans-serif;
+    color: var(--color-secundary);
+    font-size: 1.25rem;
+
+}
+
+
+@media (max-width: 991px) {
+
+    footer {
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    footer .logo {
+
+        margin-left: 0px;
+        
+    }
+
+    footer div {
+
+        margin: 15px 0;
+
+    }
+
+    header {
+
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+
+    header .navigation li a {
+
+        margin-right: 10px;
+    
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    main .contact {
+
+        width: 290px;
+
+    }
+
+}
